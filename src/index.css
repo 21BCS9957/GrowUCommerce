@@ -174,51 +174,13 @@ rocess section animations */
   transform: scale(1.02);
 }
 
-/*
- Hide scrollbar for case studies */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
-/* Smo
-oth horizontal scrolling for case studies */
-.scrollbar-hide {
-  scroll-behavior: smooth;
-}
 
-/* Custom
- scrollbar styles */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Custom scrollbar for testimonials */
-.testimonial-scroll::-webkit-scrollbar {
-  width: 4px;
-}
-
-.testimonial-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.testimonial-scroll::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.3);
-  border-radius: 2px;
-}
-
-.testimonial-scroll::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary) / 0.5);
-}
 
 /* Radi
 al gradient utility */

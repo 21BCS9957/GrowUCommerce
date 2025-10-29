@@ -1,59 +1,93 @@
-# React Project
+# GrowUCommerce
 
-## Project info
+A modern digital marketing website built with React, TypeScript, and Tailwind CSS.
 
-This is a React application built with Vite, TypeScript, and Tailwind CSS.
+## Features
 
-## How can I edit this code?
+- 🎨 Modern, responsive design with green theme
+- 🚀 Built with Vite for fast development and builds
+- 💼 Digital marketing services showcase
+- 📱 Mobile-first responsive design
+- ⚡ Optimized performance with minimal dependencies
+- 🎯 SEO-friendly structure
 
-**Use your preferred IDE**
+## Services
 
-Clone this repo and push changes to deploy your updates.
+- **Shopify Store Development** - Custom e-commerce solutions with CRO and automation
+- **Paid Marketing** - Meta Ads (Facebook & Instagram) and TikTok advertising
+- **Creative Services** - Scripting, video editing, and content production
+- **Full Funnel Marketing** - Complete customer journey optimization
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Tech Stack
 
-Follow these steps:
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **UI Components**: Custom components with Radix UI primitives
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/21BCS9957/GrowUCommerce.git
+   cd GrowUCommerce
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components
+│   ├── Hero.tsx        # Hero section
+│   ├── CoreServices.tsx # Services showcase
+│   ├── Process.tsx     # Methodology section
+│   ├── OnboardingProcess.tsx # Onboarding steps
+│   ├── FAQ.tsx         # Frequently asked questions
+│   └── ...
+├── pages/              # Page components
+├── lib/                # Utility functions
+└── hooks/              # Custom React hooks
 ```
 
-**Edit a file directly in GitHub**
+## Key Components
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Hero Section**: Main landing area with CTA and stats
+- **Core Services**: Stacking cards showcasing main services
+- **Process**: Step-by-step methodology
+- **Onboarding Process**: Detailed onboarding steps
+- **FAQ**: Common questions and answers
+- **Footer**: Contact info and legal documents
 
-**Use GitHub Codespaces**
+## Optimization Features
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- ✅ Removed unused UI components and dependencies
+- ✅ Optimized CSS with minimal custom styles
+- ✅ Clean component architecture
+- ✅ Efficient bundle size
+- ✅ Fast loading times
 
-## What technologies are used for this project?
+## Contact
 
-This project is built with:
+For inquiries about digital marketing services, visit the website and book a consultation.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## License
 
-## How can I deploy this project?
-
-You can deploy this project to any hosting platform that supports static sites, such as Vercel, Netlify, or GitHub Pages.
-
-Build the project with `npm run build` and deploy the `dist` folder.
+© 2024 GrowUCommerce. All rights reserved.
