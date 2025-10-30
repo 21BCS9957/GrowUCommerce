@@ -33,7 +33,7 @@ const CTA = () => {
               onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
             >
               <Calendar className="mr-2" />
-              Book Your Free Call
+              Book Your Strategy Call
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

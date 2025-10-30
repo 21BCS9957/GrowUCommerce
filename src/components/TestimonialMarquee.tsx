@@ -3,39 +3,51 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    company: "E-commerce Store Owner",
-    text: "GrowUCommerce transformed our Shopify store. Sales increased by 300% in just 3 months!",
+    name: "Priya Sharma",
+    company: "Organic Food Startup",
+    text: "GrowUCommerce helped us reach health-conscious customers across India. Our online sales grew by 400%!",
     rating: 5
   },
   {
-    name: "Mike Chen",
-    company: "Digital Marketing Agency",
-    text: "Their Meta ads expertise is unmatched. Best ROI we've ever achieved.",
+    name: "Arjun Patel",
+    company: "Fitness Equipment Brand",
+    text: "Their targeted campaigns brought us quality leads. We scaled from local to pan-India in 6 months.",
     rating: 5
   },
   {
-    name: "Satyam Tripathi",
-    company: "AI Startup",
-    text: "GrowUCommerce's AI-driven strategies helped us achieve 400% growth in user engagement.",
+    name: "Kavya Reddy",
+    company: "Handmade Jewelry Business",
+    text: "Social media strategy transformed our artisan brand. Revenue increased by 250% through Instagram ads.",
     rating: 5
   },
   {
-    name: "Emily Rodriguez",
-    company: "Fashion Brand",
-    text: "The creative team delivered stunning content that perfectly captured our brand.",
+    name: "Rohit Gupta",
+    company: "EdTech Startup",
+    text: "Their funnel optimization helped us acquire 10,000+ students. Best investment for our growth.",
     rating: 5
   },
   {
-    name: "David Thompson",
-    company: "Tech Startup",
-    text: "Full funnel approach helped us scale from 0 to 6 figures in revenue.",
+    name: "Sneha Agarwal",
+    company: "Sustainable Fashion Brand",
+    text: "Creative content and influencer partnerships drove massive brand awareness. Sales doubled in 4 months.",
     rating: 5
   },
   {
-    name: "Lisa Wang",
-    company: "Beauty Brand",
-    text: "TikTok ads campaign exceeded all expectations. Highly recommend!",
+    name: "Vikram Singh",
+    company: "Home Decor Startup",
+    text: "Meta and Google ads expertise helped us reach interior design enthusiasts. ROI exceeded expectations!",
+    rating: 5
+  },
+  {
+    name: "Ananya Joshi",
+    company: "Beauty & Skincare Brand",
+    text: "TikTok campaigns went viral and brought us thousands of new customers. Amazing results!",
+    rating: 5
+  },
+  {
+    name: "Karan Mehta",
+    company: "Food Delivery Service",
+    text: "Local SEO and social media marketing helped us dominate our city. Orders increased by 300%.",
     rating: 5
   }
 ];

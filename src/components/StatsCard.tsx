@@ -77,7 +77,7 @@ const StatsCard = ({ stat, description, icon: Icon }: StatsCardProps) => {
       {/* Greenish gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-400/10 via-green-300/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-      <div className="relative z-10 space-y-3">
+      <div className="relative z-10 space-y-3 text-left">
         <div className="flex items-center justify-between">
           <span className="text-5xl font-semibold bg-gradient-to-r from-gray-400 via-gray-300 to-green-400 bg-clip-text text-transparent">
             {prefix}{animatedValue}{suffix}
@@ -86,7 +86,7 @@ const StatsCard = ({ stat, description, icon: Icon }: StatsCardProps) => {
             <Icon className="w-6 h-6 text-green-400 group-hover:text-black transition-colors" />
           </div>
         </div>
-        <p className="text-sm text-muted-foreground leading-relaxed">
+        <p className="text-sm text-muted-foreground leading-relaxed text-left">
           {description}
         </p>
       </div>
