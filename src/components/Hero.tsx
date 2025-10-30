@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-background/20" />
 
       <div className="container mx-auto px-6 relative z-20">
-        <div className="text-center max-w-5xl mx-auto space-y-8 animate-fade-in">
+        <div className="text-left max-w-5xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight bg-gradient-to-r from-gray-500 via-white to-green-400 bg-clip-text text-transparent" style={{ fontFamily: 'Manrope, sans-serif' }}>
             D2C Growth Engines
             <br />
@@ -20,7 +20,7 @@ const Hero = () => {
 
           </p>
 
-          <div className="flex justify-center items-center pt-4">
+          <div className="flex justify-start items-center pt-4">
             <Button
               variant="hero"
               size="default"
@@ -38,18 +38,17 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 max-w-5xl mx-auto">
             <StatsCard
               stat="5.8X"
-              description="Average in ROAS
-for Brands"
+              description="Average ROAS for Brands"
               icon={TrendingUp}
             />
             <StatsCard
               stat="$10M+"
-              description="Tracked revenue for business"
+              description="Tracked Revenue for Businesses"
               icon={DollarSign}
             />
             <StatsCard
               stat="150+"
-              description="Brands Scaled from scratch"
+              description="Brands Scaled from Scratch"
               icon={Users}
             />
           </div>
