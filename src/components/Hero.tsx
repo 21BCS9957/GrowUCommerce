@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-20">
         <div className="text-center max-w-5xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight bg-gradient-to-r from-gray-500 via-white to-green-400 bg-clip-text text-transparent" style={{ fontFamily: 'Manrope, sans-serif' }}>
-          D2C Growth Engines
+            D2C Growth Engines
             <br />
             Built for Scale
           </h1>
@@ -23,8 +23,8 @@ const Hero = () => {
           <div className="flex justify-center items-center pt-4">
             <Button
               variant="hero"
-              size="lg"
-              className="text-lg px-8 py-6 h-auto group"
+              size="default"
+              className="text-base px-6 py-4 h-auto group"
               onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
             >
               Book Free Strategy Session

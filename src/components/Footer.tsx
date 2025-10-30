@@ -6,7 +6,7 @@ const Footer = () => {
   const [showRefundPolicy, setShowRefundPolicy] = useState(false);
 
   return (
-    <footer className="py-8 border-t border-border relative overflow-hidden">
+    <footer className="py-4 border-t border-border relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
 
       <div className="container mx-auto px-6 relative z-10">

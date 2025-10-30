@@ -84,7 +84,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-8 relative overflow-hidden">
+    <section className="py-4 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/10 to-background" />
       <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/3 rounded-full blur-3xl animate-pulse" />

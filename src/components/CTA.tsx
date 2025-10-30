@@ -3,7 +3,7 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="py-8 relative overflow-hidden">
+    <section className="py-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
 
       {/* Animated glow effect */}
@@ -13,23 +13,23 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 p-12 rounded-3xl bg-card/30 backdrop-blur border border-primary/30 shadow-[0_0_60px_hsl(var(--primary)/0.3)]">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-medium leading-tight">
-              Ready to Build Your
+              Ready to Scale Your
               <br />
               <span className="bg-gradient-to-r from-gray-500 via-white to-green-400 bg-clip-text text-transparent">
-                YouTube Empire?
+                Digital Business?
               </span>
             </h2>
 
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Book a free strategy session and discover exactly how we'll grow your channel, increase revenue, and build a lasting audience.
+              Book a free strategy session and discover exactly how we'll grow your business, increase revenue, and build a lasting digital presence.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               variant="hero"
-              size="lg"
-              className="text-lg px-10 py-7 h-auto group"
+              size="default"
+              className="text-base px-6 py-4 h-auto group"
               onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
             >
               <Calendar className="mr-2" />

@@ -11,7 +11,7 @@ const clients = [
 
 const ClientMarquee = () => {
   return (
-    <section className="py-4 bg-muted/30">
+    <section className="py-2 bg-muted/30">
       <div className="container mx-auto px-6">
 
         

@@ -36,7 +36,7 @@ const Process = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section id="process" className="py-8 relative overflow-hidden">
+    <section id="process" className="py-4 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/50 to-background" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
@@ -168,21 +168,7 @@ const Process = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-20">
-          <div className="inline-flex flex-col items-center gap-4 p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/30 backdrop-blur">
-            <p className="text-lg font-semibold">
-              Ready to experience our proven process?
-            </p>
-            <button
-              className="group px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
-              onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
-            >
-              Start Your Journey
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </div>
-        </div>
+
       </div>
     </section>
   );
