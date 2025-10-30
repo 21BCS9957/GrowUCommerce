@@ -6,7 +6,7 @@ const Footer = () => {
   const [showRefundPolicy, setShowRefundPolicy] = useState(false);
 
   return (
-    <footer className="py-12 border-t border-border relative overflow-hidden">
+    <footer className="py-8 border-t border-border relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -77,9 +77,9 @@ const Footer = () => {
                     <h3 className="font-bold text-base mb-3">1. Information We Collect</h3>
                     <p className="mb-2">We collect the following types of data:</p>
                     <ul className="list-disc pl-5 space-y-1">
-                      <li><strong>Personal Information:</strong> Name, email, phone number, billing address, age (for training), and social media profiles (if linked).</li>
+                      <li><strong>Personal Information:</strong> Name, email, phone number, billing address, business information, and social media profiles (if linked).</li>
                       <li><strong>Payment Details:</strong> We do not store your credit/debit card details. Payments are processed through secure third-party gateways.</li>
-                      <li><strong>Usage Data:</strong> IP address, browser type, cookies, and website analytics.</li>
+                      <li><strong>Usage Data:</strong> IP address, browser type, cookies, website analytics, and marketing campaign data.</li>
                     </ul>
                   </div>
 
@@ -87,11 +87,11 @@ const Footer = () => {
                     <h3 className="font-bold text-base mb-3">2. How We Use Your Information</h3>
                     <p className="mb-2">We use your data to:</p>
                     <ul className="list-disc pl-5 space-y-1">
-                      <li>Provide and improve our services and training programs.</li>
+                      <li>Provide and improve our digital marketing services.</li>
                       <li>Process payments and generate invoices.</li>
-                      <li>Communicate with you regarding services, training schedules, and updates.</li>
-                      <li>Send promotional offers (you may opt-out anytime).</li>
-                      <li>Ensure compliance with legal obligations.</li>
+                      <li>Communicate with you regarding campaigns, performance reports, and updates.</li>
+                      <li>Send promotional offers and marketing insights (you may opt-out anytime).</li>
+                      <li>Ensure compliance with legal obligations and advertising standards.</li>
                     </ul>
                   </div>
 
@@ -100,7 +100,8 @@ const Footer = () => {
                     <p className="mb-2">We do not sell your data to third parties. However, we may share data with:</p>
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Payment Gateways (for processing transactions).</li>
-                      <li>Service Providers (for delivery of training content or technical support).</li>
+                      <li>Advertising Platforms (Meta, Google, TikTok) for campaign management.</li>
+                      <li>Analytics Providers (for performance tracking and reporting).</li>
                       <li>Legal Authorities (if required by law).</li>
                     </ul>
                   </div>
@@ -237,7 +238,7 @@ const Footer = () => {
                   <div>
                     <h3 className="font-bold text-base mb-3">6. Services</h3>
                     <ul className="list-disc pl-5 space-y-1">
-                      <li>GrowUCommerce provides video editing, YouTube channel management, content strategy, and related digital marketing services.</li>
+                      <li>GrowUCommerce provides Shopify store development, paid advertising management (Meta, TikTok), creative services, and full-funnel marketing solutions.</li>
                       <li>Specific details of deliverables, pricing, and timelines will be defined in the Service Agreement or Project Proposal for each client.</li>
                     </ul>
                   </div>
@@ -348,21 +349,21 @@ const Footer = () => {
                   </p>
 
                   <div>
-                    <h3 className="font-bold text-base mb-3">1. For Services (Video Editing, YouTube Growth, etc.)</h3>
+                    <h3 className="font-bold text-base mb-3">1. For Digital Marketing Services</h3>
                     <ul className="list-disc pl-5 space-y-1">
                       <li>All payments for services are non-refundable once the project has started.</li>
                       <li>If you cancel before work begins, you may receive a full refund.</li>
                       <li>If partial work is completed, refunds will be prorated at our discretion.</li>
-                      <li>No refunds for completed projects.</li>
+                      <li>No refunds for completed projects or active advertising campaigns.</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h3 className="font-bold text-base mb-3">2. For Video Editing Training Programs</h3>
+                    <h3 className="font-bold text-base mb-3">2. For Advertising Spend</h3>
                     <ul className="list-disc pl-5 space-y-1">
-                      <li>Refunds can be requested within 7 days of course purchase only if less than 10% of the course material has been accessed.</li>
-                      <li>After 7 days OR if more than 10% of material is accessed, no refunds will be provided.</li>
-                      <li>For live mentorship or bootcamps, refunds are allowed only if cancellation is made 48 hours before the first session.</li>
+                      <li>Advertising spend paid to platforms (Meta, Google, TikTok) is non-refundable.</li>
+                      <li>Management fees are refundable only if campaigns have not been launched.</li>
+                      <li>Performance guarantees do not include refunds for advertising spend.</li>
                     </ul>
                   </div>
 
@@ -378,8 +379,9 @@ const Footer = () => {
                   <div>
                     <h3 className="font-bold text-base mb-3">4. Exceptions</h3>
                     <ul className="list-disc pl-5 space-y-1">
-                      <li>No refunds for downloadable digital products or resources.</li>
-                      <li>No refunds for delays caused by client's failure to provide timely feedback, approvals, or content.</li>
+                      <li>No refunds for advertising spend or platform fees.</li>
+                      <li>No refunds for delays caused by client's failure to provide timely feedback, approvals, or creative assets.</li>
+                      <li>No refunds for external factors affecting campaign performance (platform policy changes, market conditions).</li>
                     </ul>
                   </div>
 

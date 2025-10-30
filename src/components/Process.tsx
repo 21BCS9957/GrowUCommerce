@@ -36,7 +36,7 @@ const Process = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section id="process" className="py-32 relative overflow-hidden">
+    <section id="process" className="py-8 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/50 to-background" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />

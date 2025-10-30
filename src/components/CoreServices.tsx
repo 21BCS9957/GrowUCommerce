@@ -48,7 +48,7 @@ const CoreServices = () => {
   return (
     <>
       {/* Header Section */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-card to-background" />
 
         {/* Decorative elements */}
@@ -125,22 +125,7 @@ const CoreServices = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center pb-16">
-          <div className="inline-flex flex-col items-center gap-4 p-8 rounded-2xl bg-card/50 backdrop-blur border border-primary/30">
-            <p className="text-lg font-semibold">
-              Ready to grow your business with our proven digital marketing solutions?
-            </p>
-            <Button
-              variant="hero"
-              size="lg"
-              className="text-lg px-10 py-6 h-auto"
-              onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
-            >
-              Get Your Custom Strategy
-            </Button>
-          </div>
-        </div>
+
       </section>
     </>
   );

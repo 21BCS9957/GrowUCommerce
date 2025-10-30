@@ -202,4 +202,42 @@ al gradient utility */
 /* Arrow hover effect */
 .group:hover .rocket-arrow-icon {
   animation: arrow-takeoff 0.3s ease-out forwards;
+}/*
+ Marquee animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-slow {
+  animation: marquee 50s linear infinite;
+}
+
+.animate-marquee-fast {
+  animation: marquee 15s linear infinite;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+.hover\:pause:hover {
+  animation-play-state: paused;
 }

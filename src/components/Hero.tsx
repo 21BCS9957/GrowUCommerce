@@ -10,10 +10,10 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-20">
         <div className="text-center max-w-5xl mx-auto space-y-8 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight bg-gradient-to-r from-gray-500 via-white to-green-400 bg-clip-text text-transparent" style={{ fontFamily: 'Manrope, sans-serif' }}>
-            We Build Scalable Growth Engines,
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight bg-gradient-to-r from-gray-500 via-white to-green-400 bg-clip-text text-transparent" style={{ fontFamily: 'Manrope, sans-serif' }}>
+          D2C Growth Engines
             <br />
-            for D2C BRANDS
+            Built for Scale
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
