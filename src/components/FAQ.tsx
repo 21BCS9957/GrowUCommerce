@@ -128,23 +128,7 @@ const FAQ = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-card/50 backdrop-blur border border-primary/20">
-            <div className="text-center sm:text-left">
-              <h3 className="text-lg font-semibold mb-1">Still have questions?</h3>
-              <p className="text-muted-foreground text-sm">We're here to help you succeed.</p>
-            </div>
-            <a
-              href="https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25 whitespace-nowrap"
-            >
-              Get in Touch
-            </a>
-          </div>
-        </div>
+
       </div>
     </section>
   );

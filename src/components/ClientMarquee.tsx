@@ -15,11 +15,11 @@ const ClientMarquee = () => {
       <div className="container mx-auto px-6">
 
         
-        <Marquee speed="normal" pauseOnHover={true} className="py-8">
-          {clients.map((client, index) => (
+        <div className="flex items-center justify-center gap-8 py-8">
+          {clients.slice(0, 3).map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="flex items-center justify-center mx-8 hover:scale-110 transition-all duration-300"
+              className="flex items-center justify-center hover:scale-110 transition-all duration-300"
             >
               <img
                 src={client.logo}
@@ -35,7 +35,7 @@ const ClientMarquee = () => {
               />
             </div>
           ))}
-        </Marquee>
+        </div>
       </div>
     </section>
   );
