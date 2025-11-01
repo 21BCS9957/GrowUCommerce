@@ -43,7 +43,7 @@ const OnboardingProcess = () => {
   return (
     <>
       {/* Header Section */}
-      <section className="py-4 relative overflow-hidden">
+      <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-card to-background" />
 
         {/* Decorative elements */}

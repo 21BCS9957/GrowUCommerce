@@ -5,12 +5,12 @@ import ClientMarquee from "./ClientMarquee";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20" style={{ backgroundImage: 'url(/hero-green-bg.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32" style={{ backgroundImage: 'url(/hero-green-bg.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {/* Light overlay for better text readability */}
       <div className="absolute inset-0 bg-background/20" />
 
       <div className="container mx-auto px-6 relative z-20">
-        <div className="text-center max-w-5xl mx-auto space-y-8 animate-fade-in">
+        <div className="text-center max-w-5xl mx-auto space-y-6 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight bg-gradient-to-r from-gray-500 via-white to-green-400 bg-clip-text text-transparent" style={{ fontFamily: 'Manrope, sans-serif' }}>
             D2C Growth Engines
             <br />
@@ -21,7 +21,7 @@ const Hero = () => {
 
           </p>
 
-          <div className="flex justify-center items-center pt-4">
+          <div className="flex justify-center items-center pt-2">
             <Button
               variant="hero"
               size="default"
