@@ -21,20 +21,20 @@ const CTA = () => {
             </h2>
 
             <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-center">
-              Unlock your brand's full potential with data-driven growth strategies designed to maximize ROI, boost conversions, and enhance customer retention. From advanced analytics and performance marketing to conversion optimization and personalized brand experiences — we help you transform your D2C business into a scalable, high-performing growth engine.
+              Unlock your brand's full potential with data-driven growth strategies designed to maximize ROI, boost conversions, and enhance customer retention. 
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 px-2">
             <Button
               variant="hero"
               size="default"
-              className="text-base px-6 py-4 h-auto group"
+              className="text-sm sm:text-base px-4 sm:px-6 py-3 sm:py-4 h-auto group w-full sm:w-auto max-w-xs sm:max-w-none"
               onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
             >
-              <Calendar className="mr-2" />
-              Schedule Strategic Consultation
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <Calendar className="mr-2 w-4 h-4" />
+              <span className="truncate">Schedule Strategic Consultation</span>
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Button>
           </div>
 
