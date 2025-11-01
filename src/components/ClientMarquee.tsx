@@ -11,7 +11,7 @@ const clients = [
 
 const ClientMarquee = () => {
   return (
-    <div className="flex items-center justify-center gap-8 py-8">
+    <div className="flex items-center justify-center gap-4 py-8">
       {clients.slice(0, 3).map((client, index) => (
         <div
           key={`${client.name}-${index}`}
@@ -21,7 +21,7 @@ const ClientMarquee = () => {
             src={client.logo}
             alt={client.name}
             className={`w-auto object-contain ${
-              client.name === 'Meta' ? 'h-32' : 'h-16'
+              client.name === 'Meta' ? 'h-40' : 'h-24'
             }`}
             loading="lazy"
             onError={(e) => {

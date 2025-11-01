@@ -16,12 +16,12 @@ const CTA = () => {
               Ready to Scale Your
               <br />
               <span className="bg-gradient-to-r from-gray-500 via-white to-green-400 bg-clip-text text-transparent">
-                Digital Business?
+                D2C Brand?
               </span>
             </h2>
 
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Book a free strategy session and discover exactly how we'll grow your business, increase revenue, and build a lasting digital presence.
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Transform your D2C business with data-driven strategies that maximize ROI and accelerate growth through advanced analytics and conversion optimization.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ const CTA = () => {
               onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
             >
               <Calendar className="mr-2" />
-              Book Your Strategy Call
+              Schedule Strategic Consultation
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
