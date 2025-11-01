@@ -33,7 +33,7 @@ const CTA = () => {
               onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
             >
               <Calendar className="mr-2 w-4 h-4" />
-              <span className="truncate">Schedule Strategic Consultation</span>
+              <span className="truncate">Book strategy call</span>
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Button>
           </div>
