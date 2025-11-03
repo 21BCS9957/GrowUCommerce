@@ -20,9 +20,8 @@ const ClientMarquee = () => {
           <img
             src={client.logo}
             alt={client.name}
-            className={`w-auto object-contain ${
-              client.name === 'Meta' ? 'h-40' : 'h-24'
-            }`}
+            className={`w-auto object-contain ${client.name === 'Meta' ? 'h-40' : 'h-24'
+              }`}
             loading="lazy"
             onError={(e) => {
               console.log(`Failed to load image: ${client.logo}`);
@@ -35,4 +34,4 @@ const ClientMarquee = () => {
   );
 };
 
-export default ClientMarquee;
+export default ClientMarquee; 
