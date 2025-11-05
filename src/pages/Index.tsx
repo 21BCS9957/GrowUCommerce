@@ -5,6 +5,7 @@ import Process from "@/components/Process";
 import OnboardingProcess from "@/components/OnboardingProcess";
 import TestimonialMarquee from "@/components/TestimonialMarquee";
 import FAQ from "@/components/FAQ";
+import ContactForm from "@/components/ContactForm";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <OnboardingProcess />
       <TestimonialMarquee />
       <FAQ />
+      <ContactForm />
       <CTA />
       <Footer />
     </div>
