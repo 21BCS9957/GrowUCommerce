@@ -224,21 +224,16 @@ const ContactForm = () => {
                 <label htmlFor="budget" className="block text-sm font-medium text-foreground mb-2">
                   Budget *
                 </label>
-                <select
+                <input
+                  type="text"
                   id="budget"
                   name="budget"
                   value={formData.budget}
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                >
-                  <option value="">Select your budget range</option>
-                  <option value="1k-5k">$1,000 - $5,000</option>
-                  <option value="5k-10k">$5,000 - $10,000</option>
-                  <option value="10k-25k">$10,000 - $25,000</option>
-                  <option value="25k-50k">$25,000 - $50,000</option>
-                  <option value="50k+">$50,000+</option>
-                </select>
+                  placeholder="Enter your budget (e.g., $5,000 or $10,000-$20,000)"
+                />
               </div>
 
               <div>
