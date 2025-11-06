@@ -30,10 +30,10 @@ const CTA = () => {
               variant="hero"
               size="default"
               className="text-sm sm:text-base px-4 sm:px-6 py-3 sm:py-4 h-auto group w-full sm:w-auto max-w-xs sm:max-w-none"
-              onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
+              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Calendar className="mr-2 w-4 h-4" />
-              <span className="truncate">Book strategy call</span>
+              <span className="truncate">Fill Contact Form</span>
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Button>
           </div>

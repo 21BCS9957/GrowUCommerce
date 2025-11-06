@@ -20,9 +20,9 @@ const Navbar = () => {
             variant="outline"
             size="default"
             className="px-6 py-2"
-            onClick={() => window.open('https://calendly.com/kushalxarora/bookfreeconsulting?month=2025-10', '_blank')}
+            onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Book Strategy Call
+            Contact Us
           </Button>
         </div>
       </div>
