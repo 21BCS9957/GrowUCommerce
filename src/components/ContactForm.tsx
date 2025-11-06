@@ -9,6 +9,8 @@ interface FormData {
   company: string;
   monthlyRevenue: string;
   websiteUrl: string;
+  budget: string;
+  aboutProject: string;
 }
 
 const ContactForm = () => {
@@ -18,7 +20,9 @@ const ContactForm = () => {
     phone: "",
     company: "",
     monthlyRevenue: "",
-    websiteUrl: ""
+    websiteUrl: "",
+    budget: "",
+    aboutProject: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -44,6 +48,8 @@ const ContactForm = () => {
         company: formData.company,
         monthlyRevenue: formData.monthlyRevenue,
         websiteUrl: formData.websiteUrl,
+        budget: formData.budget,
+        aboutProject: formData.aboutProject,
       };
 
       const response = await fetch('/api/submit-form', {
@@ -71,7 +77,7 @@ const ContactForm = () => {
 
       if (response.ok && result.success) {
         setSubmitStatus('success');
-        setFormData({ name: "", email: "", phone: "", company: "", monthlyRevenue: "", websiteUrl: "" });
+        setFormData({ name: "", email: "", phone: "", company: "", monthlyRevenue: "", websiteUrl: "", budget: "", aboutProject: "" });
         
         // Track Facebook Pixel event
         if (typeof window !== 'undefined' && (window as any).fbq) {
@@ -212,6 +218,42 @@ const ContactForm = () => {
                     placeholder="https://yourwebsite.com or social media link"
                   />
                 </div>
+              </div>
+
+              <div>
+                <label htmlFor="budget" className="block text-sm font-medium text-foreground mb-2">
+                  Budget *
+                </label>
+                <select
+                  id="budget"
+                  name="budget"
+                  value={formData.budget}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                >
+                  <option value="">Select your budget range</option>
+                  <option value="1k-5k">$1,000 - $5,000</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-50k">$25,000 - $50,000</option>
+                  <option value="50k+">$50,000+</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="aboutProject" className="block text-sm font-medium text-foreground mb-2">
+                  About Project
+                </label>
+                <textarea
+                  id="aboutProject"
+                  name="aboutProject"
+                  value={formData.aboutProject}
+                  onChange={handleInputChange}
+                  rows={4}
+                  className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-vertical"
+                  placeholder="Tell us about your project, goals, or any specific requirements..."
+                />
               </div>
 
               <div className="pt-4">

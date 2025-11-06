@@ -20,11 +20,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, phone, company, monthlyRevenue, websiteUrl } = req.body;
+    const { name, email, phone, company, monthlyRevenue, websiteUrl, budget, aboutProject } = req.body;
 
     // Validate required fields
-    if (!name || !email || !phone || !company || !monthlyRevenue || !websiteUrl) {
-      return res.status(400).json({ error: 'All fields are required' });
+    if (!name || !email || !phone || !company || !monthlyRevenue || !websiteUrl || !budget) {
+      return res.status(400).json({ error: 'All required fields must be filled' });
     }
 
     // Extract spreadsheet ID from your URL
@@ -41,6 +41,8 @@ export default async function handler(req, res) {
       company: company,
       monthlyRevenue: monthlyRevenue,
       websiteUrl: websiteUrl,
+      budget: budget,
+      aboutProject: aboutProject || 'Not provided',
       timestamp: new Date().toISOString()
     };
 
@@ -48,6 +50,8 @@ export default async function handler(req, res) {
     console.log('Submitting form data to Google Sheets:', formData);
     console.log('Monthly Revenue:', monthlyRevenue);
     console.log('Website URL:', websiteUrl);
+    console.log('Budget:', budget);
+    console.log('About Project:', aboutProject);
 
     // Submit to Google Apps Script
     const response = await fetch(GOOGLE_SCRIPT_URL, {

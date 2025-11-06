@@ -8,6 +8,8 @@ function doPost(e) {
     console.log('Received data:', data);
     console.log('Monthly Revenue:', data.monthlyRevenue);
     console.log('Website URL:', data.websiteUrl);
+    console.log('Budget:', data.budget);
+    console.log('About Project:', data.aboutProject);
     
     // Your Google Spreadsheet ID (extracted from your URL)
     const SPREADSHEET_ID = '1l7Ych5VAMQeYiGIcfMMkDRSJ1ufvsS_lL4kz8g3eEts';
@@ -20,7 +22,7 @@ function doPost(e) {
     const lastRow = sheet.getLastRow();
     if (lastRow === 0) {
       // Add headers if sheet is empty
-      sheet.getRange(1, 1, 1, 7).setValues([['Name', 'Email', 'Phone', 'Company', 'Monthly Revenue', 'Website/Social', 'Timestamp']]);
+      sheet.getRange(1, 1, 1, 9).setValues([['Name', 'Email', 'Phone', 'Company', 'Monthly Revenue', 'Website/Social', 'Budget', 'About Project', 'Timestamp']]);
     }
     
     // Add the new row of data
@@ -31,6 +33,8 @@ function doPost(e) {
       data.company,
       data.monthlyRevenue,
       data.websiteUrl,
+      data.budget,
+      data.aboutProject,
       data.timestamp
     ];
     
