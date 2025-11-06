@@ -23,8 +23,8 @@ export default async function handler(req, res) {
     const { name, email, phone, company, monthlyRevenue, websiteUrl } = req.body;
 
     // Validate required fields
-    if (!name || !email || !phone || !company) {
-      return res.status(400).json({ error: 'Name, email, phone, and company are required' });
+    if (!name || !email || !phone || !company || !monthlyRevenue || !websiteUrl) {
+      return res.status(400).json({ error: 'All fields are required' });
     }
 
     // Extract spreadsheet ID from your URL
@@ -39,13 +39,15 @@ export default async function handler(req, res) {
       email: email,
       phone: phone,
       company: company,
-      monthlyRevenue: monthlyRevenue || 'Not specified',
-      websiteUrl: websiteUrl || 'Not specified',
+      monthlyRevenue: monthlyRevenue,
+      websiteUrl: websiteUrl,
       timestamp: new Date().toISOString()
     };
 
     // Log the submission for debugging
     console.log('Submitting form data to Google Sheets:', formData);
+    console.log('Monthly Revenue:', monthlyRevenue);
+    console.log('Website URL:', websiteUrl);
 
     // Submit to Google Apps Script
     const response = await fetch(GOOGLE_SCRIPT_URL, {
@@ -73,4 +75,4 @@ export default async function handler(req, res) {
       message: error.message 
     });
   }
-}
+} 

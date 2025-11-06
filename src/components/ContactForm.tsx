@@ -179,28 +179,27 @@ const ContactForm = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="monthlyRevenue" className="block text-sm font-medium text-foreground mb-2">
-                    Monthly Revenue
+                    Monthly Revenue *
                   </label>
                   <select
                     id="monthlyRevenue"
                     name="monthlyRevenue"
                     value={formData.monthlyRevenue}
                     onChange={handleInputChange}
+                    required
                     className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
                   >
                     <option value="">Select revenue range</option>
                     <option value="0-10k">$0 - $10,000</option>
-                    <option value="10k-50k">$10,000 - $50,000</option>
-                    <option value="50k-100k">$50,000 - $100,000</option>
-                    <option value="100k-500k">$100,000 - $500,000</option>
-                    <option value="500k-1m">$500,000 - $1,000,000</option>
-                    <option value="1m+">$1,000,000+</option>
+                    <option value="10k-25k">$10,000 - $25,000</option>
+                    <option value="25k-50k">$25,000 - $50,000</option>
+                    <option value="50k+">$50,000+</option>
                   </select>
                 </div>
 
                 <div>
                   <label htmlFor="websiteUrl" className="block text-sm font-medium text-foreground mb-2">
-                    Website/Social Media Link
+                    Website/Social Media Link *
                   </label>
                   <input
                     type="url"
@@ -208,6 +207,7 @@ const ContactForm = () => {
                     name="websiteUrl"
                     value={formData.websiteUrl}
                     onChange={handleInputChange}
+                    required
                     className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
                     placeholder="https://yourwebsite.com or social media link"
                   />

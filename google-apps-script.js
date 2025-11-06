@@ -4,6 +4,11 @@ function doPost(e) {
     // Parse the JSON data
     const data = JSON.parse(e.postData.contents);
     
+    // Log received data for debugging
+    console.log('Received data:', data);
+    console.log('Monthly Revenue:', data.monthlyRevenue);
+    console.log('Website URL:', data.websiteUrl);
+    
     // Your Google Spreadsheet ID (extracted from your URL)
     const SPREADSHEET_ID = '1l7Ych5VAMQeYiGIcfMMkDRSJ1ufvsS_lL4kz8g3eEts';
     
