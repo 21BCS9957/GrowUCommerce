@@ -20,11 +20,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, phone, company } = req.body;
+    const { name, email, phone, company, monthlyRevenue, websiteUrl } = req.body;
 
     // Validate required fields
     if (!name || !email || !phone || !company) {
-      return res.status(400).json({ error: 'All fields are required' });
+      return res.status(400).json({ error: 'Name, email, phone, and company are required' });
     }
 
     // Extract spreadsheet ID from your URL
@@ -39,6 +39,8 @@ export default async function handler(req, res) {
       email: email,
       phone: phone,
       company: company,
+      monthlyRevenue: monthlyRevenue || 'Not specified',
+      websiteUrl: websiteUrl || 'Not specified',
       timestamp: new Date().toISOString()
     };
 

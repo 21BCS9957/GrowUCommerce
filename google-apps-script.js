@@ -1,5 +1,3 @@
-// Google Apps Script Code
-// Copy this code to Google Apps Script and deploy as a web app
 
 function doPost(e) {
   try {
@@ -17,7 +15,7 @@ function doPost(e) {
     const lastRow = sheet.getLastRow();
     if (lastRow === 0) {
       // Add headers if sheet is empty
-      sheet.getRange(1, 1, 1, 5).setValues([['Name', 'Email', 'Phone', 'Company', 'Timestamp']]);
+      sheet.getRange(1, 1, 1, 7).setValues([['Name', 'Email', 'Phone', 'Company', 'Monthly Revenue', 'Website/Social', 'Timestamp']]);
     }
     
     // Add the new row of data
@@ -26,6 +24,8 @@ function doPost(e) {
       data.email, 
       data.phone,
       data.company,
+      data.monthlyRevenue,
+      data.websiteUrl,
       data.timestamp
     ];
     

@@ -7,6 +7,8 @@ interface FormData {
   email: string;
   phone: string;
   company: string;
+  monthlyRevenue: string;
+  websiteUrl: string;
 }
 
 const ContactForm = () => {
@@ -14,7 +16,9 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    company: ""
+    company: "",
+    monthlyRevenue: "",
+    websiteUrl: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -38,6 +42,8 @@ const ContactForm = () => {
         email: formData.email,
         phone: formData.phone,
         company: formData.company,
+        monthlyRevenue: formData.monthlyRevenue,
+        websiteUrl: formData.websiteUrl,
       };
 
       const response = await fetch('/api/submit-form', {
@@ -65,7 +71,7 @@ const ContactForm = () => {
 
       if (response.ok && result.success) {
         setSubmitStatus('success');
-        setFormData({ name: "", email: "", phone: "", company: "" });
+        setFormData({ name: "", email: "", phone: "", company: "", monthlyRevenue: "", websiteUrl: "" });
         
         // Track Facebook Pixel event
         if (typeof window !== 'undefined' && (window as any).fbq) {
@@ -166,6 +172,44 @@ const ContactForm = () => {
                     required
                     className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
                     placeholder="Enter your company name"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="monthlyRevenue" className="block text-sm font-medium text-foreground mb-2">
+                    Monthly Revenue
+                  </label>
+                  <select
+                    id="monthlyRevenue"
+                    name="monthlyRevenue"
+                    value={formData.monthlyRevenue}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                  >
+                    <option value="">Select revenue range</option>
+                    <option value="0-10k">$0 - $10,000</option>
+                    <option value="10k-50k">$10,000 - $50,000</option>
+                    <option value="50k-100k">$50,000 - $100,000</option>
+                    <option value="100k-500k">$100,000 - $500,000</option>
+                    <option value="500k-1m">$500,000 - $1,000,000</option>
+                    <option value="1m+">$1,000,000+</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="websiteUrl" className="block text-sm font-medium text-foreground mb-2">
+                    Website/Social Media Link
+                  </label>
+                  <input
+                    type="url"
+                    id="websiteUrl"
+                    name="websiteUrl"
+                    value={formData.websiteUrl}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                    placeholder="https://yourwebsite.com or social media link"
                   />
                 </div>
               </div>

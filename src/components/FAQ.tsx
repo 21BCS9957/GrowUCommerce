@@ -127,8 +127,6 @@ const FAQ = () => {
             </div>
           ))}
         </div>
-
-
       </div>
     </section>
   );
