@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
@@ -13,11 +14,13 @@ const Footer = () => {
         <div className="flex justify-center mb-8">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center">
-              <img
-                src="/GUC logo.png"
-                alt="GUC Logo"
-                className="h-16 w-auto object-contain"
-              />
+              <Link to="/contact" className="cursor-pointer hover:opacity-80 transition-opacity">
+                <img
+                  src="/GUC logo.png"
+                  alt="GUC Logo"
+                  className="h-16 w-auto object-contain"
+                />
+              </Link>
             </div>
             <p className="text-sm text-muted-foreground">
               Digital Marketing Solutions, Built for Growth
