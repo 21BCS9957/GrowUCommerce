@@ -196,10 +196,10 @@ const ContactForm = () => {
                     className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
                   >
                     <option value="">Select revenue range</option>
-                    <option value="0-10k">$0 - $10,000</option>
-                    <option value="10k-25k">$10,000 - $25,000</option>
-                    <option value="25k-50k">$25,000 - $50,000</option>
-                    <option value="50k+">$50,000+</option>
+                    <option value="0-1L">₹0 - ₹1 Lakh</option>
+                    <option value="1L-5L">₹1 Lakh - ₹5 Lakhs</option>
+                    <option value="5L-15L">₹5 Lakhs - ₹15 Lakhs</option>
+                    <option value="15L+">₹15 Lakhs+</option>
                   </select>
                 </div>
 
